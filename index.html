@@ -2,6 +2,7 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Londrina+Solid:wght@300;400&family=Open+Sans:ital,wght@0,400;0,600;1,600&family=Permanent+Marker&family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
 	<link rel="icon" href="favicon.ico">
 	<title></title>
 </head>
@@ -10,11 +11,11 @@
 
 	<header id="header">
 
-		<p id="header-name">MIKE BACK</p>
+		<a id="home" href="#welcome-section"><p id="header-name">MIKE BACK</p></a> 
 
 		<nav id="navbar">
-			<a class="nav-link" href="#welcome-section"><span>ABOUT</span></a>
-			<a class="nav-link" href="#welcome-section"><span>SKILLS</span></a>
+			<a class="nav-link" href="#scroll-stop"><span>ABOUT</span></a>
+			<a class="nav-link" href="#skills"><span>SKILLS</span></a>
 			<a class="nav-link" href="#projects"><span>PROJECTS</span></a>
 			<a class="nav-link" href="#contact-me"><span>CONTACT</span></a>
 		</nav>
@@ -22,31 +23,47 @@
 
 
 <!-- 
+	INFO TO INCLUDE IN A PORTFOLIO
  - Who you are
- - What kind of work you do
+ - What kind of work you do (projects)
  - A list of your specialized developer skills
  - Testimonials
  - Contact information -->
-
-
-
-
 
 	<section id="welcome-section">
 		<div id="welcome-text">
 			<h1>Hello, I'm Mike</h1>
 			<p>a web developer</p>
 		</div>
-		<a href="#projects"><img id="scroll" src="img/scroll-arrow-ora2.png"></a>
+		<a href="#scroll-stop"><img id="scroll" src="img/scroll-arrow-blu.png"></a>
+		<span id="scroll-stop"></span>
 	</section>
 
-	<section id="projects">
+	<section id="about">
+		<img id="profile-img" src="img/profile-img.jpg">
+		<div id="about-block">
+			<ul>
+				<li>Web developer, Marketer and Engineer (mechanical)</li>
+				<li> Based in Melbourne Australia</li>
+			</ul>
+		</div>
+	</section>
+
+	<div id="container"><section id="skills">
+			<h2>SKILLS</h2>
+		</section>
+
+		<section id="projects">
+			<h2>PROJECTS</h2>
+		</section>
+
+		<section id="contact-me">
+			<h2>CONTACT-ME</h2>	
+		</section>
+	</div>
+
+
 		
-	</section>
-
-	<section id="contact-me">
-			
-	</section>
 
 </body>
 
