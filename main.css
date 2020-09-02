@@ -1,0 +1,97 @@
+body			{
+				background: #d46c22;
+				font-family: sans-serif;
+				margin: 0;
+				}
+
+#header			{
+				height: 80px;
+				width: 90%;
+				padding: 0 3% 0 7%;
+				background: black;
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index: 2;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				}
+
+#header-name	{
+				display: inline-flex;
+				color: white;
+				font-size: 1.8em;
+				font-weight: 600;
+				}
+
+#navbar			{
+				height: 100%;
+				width: 500px;
+				display: inline-flex;
+				justify-content: space-between;
+				}
+
+.nav-link		{
+				color: white;
+				text-decoration: none;
+				font-size: 1.2em;
+				display: flex;
+				align-items: center;
+				}
+
+.nav-link span 	{
+				margin: 0 20px;
+				display: inline-block;
+				}
+
+
+.nav-link:hover {background: darkgreen;}
+
+#welcome-section {
+				height: 100vh;
+				background: #d46c22;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				}
+
+#welcome-text h1 {
+				font-size: 60px;
+				color: black;
+				font-family: 'arial';
+				}
+
+#welcome-text p {
+				font-size: 30px;
+				color: white;
+				font-family: 'arial';
+				text-align: right;
+				}
+
+#scroll			{
+				display: inline-block;
+				position: absolute;
+				top: 80%;
+				left: 48%;
+				width: 3%;
+				border: 1px solid #d46c22;
+				}
+
+#scroll:hover	{
+				border-color: white;
+				border-radius: 50%;
+				}
+
+
+#projects 		{
+				background: #3e62ab;
+				height: 100vh;
+				clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);
+				z-index: 1;
+				}
+
+#contact-me 		{
+				background: #000;
+				height: 30vh;
+				}
