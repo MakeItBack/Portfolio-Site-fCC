@@ -1,11 +1,40 @@
-HTML			{scroll-behavior: smooth;}
+html			{
+				scroll-behavior: smooth;
+				font-size: 16px;
+				}
 
 body			{
 				background: #c9c1bb;
 				font-family: 'Open Sans', sans-serif;
 				margin: 0;
+				padding: 0;
 				}
 
+/*SET UP HEADING STYLES*/
+h1 				{
+				font-size: 4rem;
+				color: black;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-weight: 300;
+				margin: 0;
+				}
+
+h2				{
+				font-size: 3rem;
+				color: black;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-weight: 300;
+				text-align: center;
+				}
+
+h3				{
+				font-size: 1.8rem;
+				color: white;
+				font-family: 'Roboto Condensed', sans-serif;
+				font-weight: 400;
+				}
+
+/*HEADER BAR AND NAV*/
 #header			{
 				height: 80px;
 				width: 90%;
@@ -21,14 +50,6 @@ body			{
 				}
 
 #home			{
-				text-decoration: none;
-				}
-
-#header-name	{
-				display: inline-flex;
-				color: white;
-				font-size: 1.8em;
-				font-weight: 600;
 				text-decoration: none;
 				}
 
@@ -55,52 +76,37 @@ body			{
 
 .nav-link:hover {background: #3e62ab;}
 
+
+/*WELCOME SECTION*/
 #welcome-section {
 				height: 100vh;
 				background: #d46c22;
 				display: flex;
 				justify-content: center;
 				align-items: center;
-				scroll-behavior: smooth;
 				}
 
-#welcome-text h1 {
-				font-size: 60px;
-				color: black;
-				font-family: 'Roboto Condensed', sans-serif;
-				font-weight: 300;
-				margin: 0;
-				}
-
-#welcome-text p {
-				font-size: 30px;
-				color: white;
-				font-family: 'arial';
+#welcome-text h3 {
 				text-align: right;
 				}
 
-#scroll			{
+.scroll			{
 				display: inline-block;
 				position: absolute;
-				top: 80%;
+				top: 70%;
 				left: 48%;
-				width: 3%;
-				border: 1px solid #d46c22;
+				width: 5%;
 				animation: pulsate 2s ease-out;
     			animation-iteration-count: 5; 
     			opacity: 1.0; 
+    			border: 1px solid transparent;
+    			border-radius: 50%;
 				}
 
 @-webkit-keyframes pulsate {
-    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
-    50% {opacity: 1.0;}
-    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
-}
-
-
-#scroll:hover	{
-				border-color: white;
-				border-radius: 50%;
+			    0% {-webkit-transform: scale(0.1, 0.1); opacity: 0.0;}
+			    50% {opacity: 1.0; border: 1px solid white;}
+			    100% {-webkit-transform: scale(1.2, 1.2); opacity: 0.0;}
 				}
 
 #scroll-stop	{
@@ -108,7 +114,12 @@ body			{
 				top: 35vh;
 				}
 
+#scroll-stop2	{
+				position: absolute;
+				top: 88vh;
+				}
 
+/*ABOUT ME SECTION*/
 #about 			{
 				background: #3e62ab;
 				height: 50vh;
@@ -122,10 +133,10 @@ body			{
 				align-items: center;
 				}
 
-
 #about-block	{
 				color: white;
 				display: inline-block;
+				margin-right: 100px;
 				}
 
 #profile-img	{
@@ -134,23 +145,106 @@ body			{
 				border-radius: 50%;
 				width: 19vh;
 				height: 19vh;
-				margin: 50px 100px;
+				margin: 50px 50px 50px 100px;
 				}
 
+/*SKILLS SECTION*/
 #skills			{
-				height: 50vh;
+				height: auto;
+				width: 100%;
 				}
 
+#skills h3		{
+				text-align: center;
+				margin-top: 0;
+				color: black;
+				}
+
+#skills-grid	{
+				display: flex;
+				width: 80%;
+				margin: 0 auto;
+				justify-content: space-between;
+				align-items: center;
+				/*flex-flow: row wrap;*/
+				filter: saturate(0%);
+				}
+
+.tech-logo	 	{
+				width: auto;
+				max-width: 100px;
+				margin: 10px;
+				flex: initial;
+				}
+
+#skills-grid:hover {
+				filter: saturate(120%);
+				}
+
+/*PROJECTS SECTION*/
 #projects 		{
-				background: #3e62ab;
-				height: 50vh;
-				/*clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 85%);*/
+				display: block;
+				height: auto;
+				padding-top: 70px;
 				}
 
+#projects-grid 	{
+				max-width: 1200px;
+				margin: 50px auto 100px auto;
+				display: grid;
+				grid-template-columns: repeat(3, 1fr);
+				grid-gap: 2rem;
+				grid-auto-rows: minmax(250px, auto);
+				}
+
+
+.project-tile	{
+				background: dimgrey;
+				font-size: 1.2rem;
+				text-decoration: none;
+				color: white;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
+				overflow: hidden;
+				border-radius: 0.35rem;
+				}
+
+.project-tile:hover {
+				box-shadow: 0px 0px 15px 5px rgba(0,0,0,0.75);
+				}
+
+
+.project-img	{
+				max-width: 500px;
+				}
+
+/*CONTACT ME SECTION (FOOTER)*/
 #contact-me 	{
 				background: #000;
+				color: white;
 				height: 30vh;
-				/*clip-path: polygon(0 0, 100% 45%, 100% 100%, 0 100%);*/
+				display: flex;
+				justify-content: center;
+				align-items: center;
 				}
 
+#contact-container 	{
+				width: 1200px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-around;
+				align-items: center;
+				flex: initial;	
+				}
 
+#contact-me img {
+				width: 50px;
+				display: inline-block;
+				}
+
+#contact-me img:hover {
+						background: #d46c22;
+						border-radius: 50%;
+						}
