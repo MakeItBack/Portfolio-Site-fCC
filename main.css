@@ -34,6 +34,13 @@ h3				{
 				font-weight: 400;
 				}
 
+.h3-black		{
+				text-align: center;
+				color: black;
+				margin-top: 0;
+				font-weight: bold;
+				}
+
 /*HEADER BAR AND NAV*/
 #header			{
 				height: 80px;
@@ -63,7 +70,7 @@ h3				{
 .nav-link		{
 				color: white;
 				text-decoration: none;
-				font-size: 1.2em;
+				font-size: 1.2rem;
 				display: flex;
 				align-items: center;
 				}
@@ -95,7 +102,7 @@ h3				{
 				position: absolute;
 				top: 70%;
 				left: 48%;
-				width: 5%;
+				width: 5rem;
 				animation: pulsate 2s ease-out;
     			animation-iteration-count: 5; 
     			opacity: 1.0; 
@@ -116,7 +123,7 @@ h3				{
 
 #scroll-stop2	{
 				position: absolute;
-				top: 88vh;
+				top: 85vh;
 				}
 
 /*ABOUT ME SECTION*/
@@ -129,14 +136,13 @@ h3				{
 				position: relative;
 				bottom: 15vh;
 				display: flex;
-				justify-content: flex-start;
+				justify-content: center;
 				align-items: center;
 				}
 
 #about-block	{
 				color: white;
 				display: inline-block;
-				margin-right: 100px;
 				}
 
 #profile-img	{
@@ -145,36 +151,26 @@ h3				{
 				border-radius: 50%;
 				width: 19vh;
 				height: 19vh;
-				margin: 50px 50px 50px 100px;
+				margin: 5%;
 				}
+
+#about h3 		{margin: 5%;}
 
 /*SKILLS SECTION*/
-#skills			{
-				height: auto;
-				width: 100%;
-				}
-
-#skills h3		{
-				text-align: center;
-				margin-top: 0;
-				color: black;
-				}
-
 #skills-grid	{
 				display: flex;
-				width: 80%;
+				width: 90%;
 				margin: 0 auto;
-				justify-content: space-between;
+				justify-content: space-around;
 				align-items: center;
-				/*flex-flow: row wrap;*/
 				filter: saturate(0%);
 				}
 
 .tech-logo	 	{
-				width: auto;
-				max-width: 100px;
+				min-width: 0;
 				margin: 10px;
-				flex: initial;
+				flex: 0 1 100px;
+				width: 100%;
 				}
 
 #skills-grid:hover {
@@ -185,7 +181,7 @@ h3				{
 #projects 		{
 				display: block;
 				height: auto;
-				padding-top: 70px;
+				padding-top: 15vh;
 				}
 
 #projects-grid 	{
@@ -248,3 +244,22 @@ h3				{
 						background: #d46c22;
 						border-radius: 50%;
 						}
+
+/*MEDIA QUERIES*/
+@media (max-width: 1000px){
+						html 			{font-size: 14px;}
+						#navbar			{width: 400px;}
+						.nav-link span 	{margin: 0 10px;}
+						#projects-grid 	{grid-template-columns: repeat(2, 1fr);}
+						#about-block	{display: none;}
+						}
+
+@media (max-width: 500px){
+						html 			{font-size: 12px;}
+						#navbar			{width: 275px;}
+						.nav-link span 	{margin: 0 5px;}
+						#projects-grid 	{grid-template-columns: repeat(1, 1fr);}
+						#about-block	{display: none;}
+						#profile-img	{display: none;}
+						}
+
