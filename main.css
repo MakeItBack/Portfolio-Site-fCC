@@ -97,14 +97,14 @@ h3				{
 				text-align: right;
 				}
 
-.scroll			{
+.scroll-arrow	{
 				display: inline-block;
 				position: absolute;
 				top: 70%;
 				left: 48%;
 				width: 5rem;
 				animation: pulsate 2s ease-out;
-    			animation-iteration-count: 5; 
+    			animation-iteration-count: 6; 
     			opacity: 1.0; 
     			border: 1px solid transparent;
     			border-radius: 50%;
@@ -145,16 +145,49 @@ h3				{
 				display: inline-block;
 				}
 
-#profile-img	{
-				display: inline-block;
-				border: 2px solid white;
-				border-radius: 50%;
+#about h3 		{margin: 5%;}
+
+/*Profile Image / Avatar Flip Animation*/
+	/* The flip card container*/
+	.flip-card 	{
+				background-color: transparent;
 				width: 19vh;
 				height: 19vh;
+				perspective: 1000px; /* 3D effect */
 				margin: 5%;
 				}
+	/* This container positions the front and back side */
+	.flip-card-inner {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				text-align: center;
+				transition: transform 1.0s;
+				transform-style: preserve-3d;
+				}
+	/* Do an vertical flip on mouse over */
+	.flip-card:hover .flip-card-inner {
+				transform: rotateX(180deg);
+				}
+	/* Position the front and back side */
+	.flip-card-front, .flip-card-back {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				-webkit-backface-visibility: hidden; /* Safari */
+				backface-visibility: hidden;
+				}
+	.flip-card-back {
+				transform: rotateX(180deg);
+				}
+	.about-img {
+				max-width: 100%;
+			  	max-height: 100%;
+			  	border: 2px solid white;
+			 	border-radius: 50%;
+				background-color: transparent;
+				}
 
-#about h3 		{margin: 5%;}
 
 /*SKILLS SECTION*/
 #skills-grid	{
@@ -173,6 +206,8 @@ h3				{
 				width: 100%;
 				}
 
+.show			{display: none;}
+
 #skills-grid:hover {
 				filter: saturate(120%);
 				}
@@ -187,6 +222,7 @@ h3				{
 #projects-grid 	{
 				max-width: 1200px;
 				margin: 50px auto 100px auto;
+				padding: 0 1rem;
 				display: grid;
 				grid-template-columns: repeat(3, 1fr);
 				grid-gap: 2rem;
@@ -246,20 +282,31 @@ h3				{
 						}
 
 /*MEDIA QUERIES*/
-@media (max-width: 1000px){
-						html 			{font-size: 14px;}
+@media (max-width: 1100px){
+						html 			{font-size: 15px;}
 						#navbar			{width: 400px;}
 						.nav-link span 	{margin: 0 10px;}
 						#projects-grid 	{grid-template-columns: repeat(2, 1fr);}
 						#about-block	{display: none;}
+						.tech-logo		{margin: 5px; }
+						.hide 			{display: none;}
+						.show			{display: inline-block;}
 						}
 
-@media (max-width: 500px){
-						html 			{font-size: 12px;}
-						#navbar			{width: 275px;}
+@media (max-width: 700px){
+						html 			{font-size: 14px;}
+						#navbar			{width: 100%;}
+						#home 			{display: none;}
 						.nav-link span 	{margin: 0 5px;}
-						#projects-grid 	{grid-template-columns: repeat(1, 1fr);}
-						#about-block	{display: none;}
+						#projects-grid 	{grid-template-columns: minmax(0, 1fr);}
 						#profile-img	{display: none;}
+						.flip-card 		{display: none;}
+						.project-img	{max-width: 100%;}
+						#contact-me h3 	{display: none;}
 						}
 
+@media (hover: none)	{
+  						.tech-logo 		{
+    									filter: none;
+  										}
+						}

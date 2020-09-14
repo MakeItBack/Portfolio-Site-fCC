@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
 
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 	<link rel="icon" href="img\favicon.ico">
+	
 	<title>&ltMike-Back&gt</title>
 </head>
 
@@ -35,22 +37,35 @@
 			<h1>Hello, I'm Mike</h1>
 			<h3>I'm a web developer</h3>
 		</div>
-		<a href="#scroll-stop"><img class="scroll" src="img/scroll-arrow-blu.png"></a>
+		<a href="#scroll-stop"><img class="scroll-arrow" src="img/scroll-arrow-blu.png"></a>
 		<span id="scroll-stop"></span>
 	</section>
 
 	<section id="about">
-		<img id="profile-img" src="img/profile-img.jpg">
+		
+		<!-- <img id="profile-img" src="img/profile-img.jpg"> -->
+		
+		<div class="flip-card">
+		 	<div class="flip-card-inner">
+		    	<div class="flip-card-front">
+		      		<img src="img/profile_img.jpg" alt="photo" class="about-img">
+		    	</div>
+		    	<div class="flip-card-back">
+		      		<a href="https://github.com/MakeItBack" target="_blank"><img src="img/octocat_dad.png" alt="Avatar" class="about-img"></a>
+		    	</div>
+		 	</div>
+		</div>
+
 		<div id="about-block">
 			<ul>
 				<li>A passion for building things and solving problems</li>
 				<li>Always learning</li>
-				<li>Marketing and Engineering (mechanical)</li>
-				<li>Based in Melbourne Australia</li>
+				<li>Pre-installed with Marketing and Engineering</li>
+				<li>Melbourne Australia</li>
 			</ul>
 		</div>	
 		<h3>Let's work on something together</h3>
-		<a href="#scroll-stop2"><img class="scroll" src="img/scroll-arrow-ora.png"></a>
+		<a href="#scroll-stop2"><img class="scroll-arrow" src="img/scroll-arrow-ora.png"></a>
 
 	</section>
 
@@ -60,16 +75,19 @@
 		<h3 class="h3-black">I have experience with...</h3>
 		<a href="#projects">
 			<div id="skills-grid">
-				<img class="tech-logo" src="img\tech\html5.png" alt="html5 logo">
-				<img class="tech-logo" src="img\tech\css3.png" alt="css3 logo">
-				<img class="tech-logo" src="img\tech\bootstrap.png" alt="bootstrap logo">
+				<img class="tech-logo hide" src="img\tech\html5.png" alt="html5 logo">
+				<img class="tech-logo hide" src="img\tech\css3.png" alt="css3 logo">
+				<img class="tech-logo show" src="img\tech\html_css.png" alt="html5 and css3 logo">
 				<img class="tech-logo" src="img\tech\javascript.png" alt="javascript logo">
+				<img class="tech-logo" src="img\tech\bootstrap.png" alt="bootstrap logo">
 				<img class="tech-logo" src="img\tech\jquery3.png" alt="jquery logo">
-				<img class="tech-logo" src="img\tech\Octocat2.png" alt="Github Octocat logo">
-				<img class="tech-logo" src="img\tech\node2.png" alt="node.js logo">
-				<img class="tech-logo" src="img\tech\npm.png" alt="npm logo">
-				<img class="tech-logo" src="img\tech\express2.png" alt="express logo">
+				<img class="tech-logo hide" src="img\tech\Octocat2.png" alt="Github Octocat logo">
+				<img class="tech-logo hide" src="img\tech\node2.png" alt="node.js logo">
+				<img class="tech-logo show" src="img\tech\node_express.png" alt="node and express logo">
+				<img class="tech-logo hide" src="img\tech\npm.png" alt="npm logo">
+				<img class="tech-logo hide" src="img\tech\express2.png" alt="express logo">
 				<img class="tech-logo" src="img\tech\mongo.png" alt="mongodb logo">
+				
 			</div>
 		</a>	
 	</section>
@@ -111,8 +129,6 @@
 			<a href="https://www.freecodecamp.org/makeitback" target="_blank"><img src="img\contact\fCC.png"></a>
 		</div>
 	</section>
-
-		
 
 </body>
 
