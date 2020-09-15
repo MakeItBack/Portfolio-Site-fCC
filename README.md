@@ -1,5 +1,5 @@
 # Portfolio Site
-**A web developers portfolio page (mine!).**<br>
+**A web developers portfolio (mine!).**<br>
 The 5th and final project for the *Responsive Web Design* course (freeCodeCamp).
 
 This site is built with plain css and html and makes use of flexbox, CSS grid and media queries for a responsive display.  
