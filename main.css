@@ -306,7 +306,7 @@ h3				{
 						}
 
 @media (hover: none)	{
-  						.tech-logo 		{
+  						#skills-grid	{
     									filter: none;
   										}
 						}
