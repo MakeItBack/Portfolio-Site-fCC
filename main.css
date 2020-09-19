@@ -51,8 +51,8 @@ h3				{
 /*HEADER BAR AND NAV*/
 #header			{
 				height: 80px;
-				width: 90%;
-				padding: 0 3% 0 7%;
+				width: 96%;
+				padding: 0 3% 0 3%;
 				background: black;
 				position: fixed;
 				top: 0;
@@ -387,7 +387,7 @@ h3				{
 						}
 
 @media (hover: none)	{
-  						.tech-logo 		{
+  						#skills-grid	{
     									-webkit-filter: none;
     									        filter: none;
   										}
