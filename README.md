@@ -8,3 +8,6 @@ This site is built with plain css and html and makes use of flexbox, CSS grid an
 ![Animated screenshot](https://github.com/MakeItBack/Portfolio-Site-fCC/blob/master/portfolio_screenshot.gif)
 
 ![Portfolio screenshot](https://github.com/MakeItBack/Portfolio-Site-fCC/blob/master/portfolio%20screenshot.jpg)
+
+### License
+This project is licensed under the terms of the BSD 3-clause "New" or "Revised" license.<br>
