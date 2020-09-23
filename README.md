@@ -9,5 +9,7 @@ This site is built with plain css and html and makes use of flexbox, CSS grid an
 
 ![Portfolio screenshot](https://github.com/MakeItBack/Portfolio-Site-fCC/blob/master/portfolio%20screenshot.jpg)
 
+___
+
 ### License
 This project is licensed under the terms of the BSD 3-clause "New" or "Revised" license.<br>
