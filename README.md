@@ -11,3 +11,6 @@ This site is built with plain css and html and makes use of flexbox, CSS grid an
 [Deployed](https://mikeback.netlify.app/) with Netlify
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9a9277f2-22bb-420e-a426-d1d70c7c65c4/deploy-status)](https://app.netlify.com/sites/mikeback/deploys)
+
+### License
+This project is licensed under the terms of the BSD 3-clause "New" or "Revised" license.<br>
