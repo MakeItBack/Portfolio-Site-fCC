@@ -8,6 +8,9 @@ body {
    font-family: "Open Sans", sans-serif;
    margin: 0;
    padding: 0;
+   a {
+      text-decoration: none;
+   }
 }
 
 /*SET UP HEADING STYLES*/
@@ -42,7 +45,7 @@ h3 {
 }
 
 /*HEADER BAR AND NAV*/
-#header {
+header {
    height: 80px;
    width: 96%;
    padding: 0 3% 0 3%;
@@ -54,51 +57,39 @@ h3 {
    display: flex;
    justify-content: space-between;
    align-items: center;
-}
 
-#home {
-   text-decoration: none;
-}
+   #navbar {
+      height: 100%;
+      width: 500px;
+      display: inline-flex;
+      justify-content: space-between;
+   }
+   .nav-link {
+      color: white;
 
-#navbar {
-   height: 100%;
-   width: 500px;
-   display: inline-flex;
-   justify-content: space-between;
-}
-
-.nav-link {
-   color: white;
-   text-decoration: none;
-   font-size: 1.2rem;
-   display: -webkit-box;
-   display: -ms-flexbox;
-   display: flex;
-   align-items: center;
-}
-
-.nav-link span {
-   margin: 0 20px;
-   display: inline-block;
-}
-
-.nav-link:hover {
-   background: #3e62ab;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+   }
+   .nav-link span {
+      margin: 0 20px;
+      display: inline-block;
+   }
+   .nav-link:hover {
+      background: #3e62ab;
+   }
 }
 
 /*WELCOME SECTION*/
 #welcome-section {
    height: 100vh;
    background: #d46c22;
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
    justify-content: center;
    align-items: center;
-}
-
-#welcome-text h3 {
-   text-align: right;
+   #welcome-text h3 {
+      text-align: right;
+   }
 }
 
 .scroll-arrow {
@@ -133,7 +124,6 @@ h3 {
    position: absolute;
    top: 35vh;
 }
-
 #scroll-stop2 {
    position: absolute;
    top: 85vh;
@@ -151,15 +141,13 @@ h3 {
    display: flex;
    justify-content: center;
    align-items: center;
-}
-
-#about-block {
-   color: white;
-   display: inline-block;
-}
-
-#about h3 {
-   margin: 5%;
+   #about-block {
+      color: white;
+      display: inline-block;
+   }
+   h3 {
+      margin: 5%;
+   }
 }
 
 /*Profile Image / Avatar Flip Animation*/
@@ -230,25 +218,22 @@ h3 {
 
 /*PROJECTS SECTION*/
 #projects {
-   display: block;
-   height: auto;
    padding-top: 15vh;
 }
 
 #projects-grid {
-   max-width: 1200px;
+   max-width: 1400px;
    margin: 50px auto 100px auto;
    padding: 0 1rem;
    display: grid;
-   grid-template-columns: repeat(3, 1fr);
-   grid-gap: 2rem;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 2rem;
    grid-auto-rows: minmax(250px, auto);
 }
 
 .project-tile {
    background: dimgrey;
    font-size: 1.2rem;
-   text-decoration: none;
    color: white;
    display: flex;
    flex-direction: column;
@@ -257,6 +242,13 @@ h3 {
    overflow: hidden;
    border-radius: 0.35rem;
    position: relative;
+   .project-img {
+      max-width: 100%;
+   }
+   &:hover {
+      box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
+      transform: scale(1.025);
+   }
 }
 
 .tile-overlay {
@@ -268,20 +260,13 @@ h3 {
    display: flex;
    align-items: center;
    justify-content: center;
-}
-
-.tile-overlay p {
-   color: rgb(56, 58, 56);
-   font-size: 3rem;
-}
-
-.tile-overlay:hover {
-   opacity: 90%;
-   box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.75);
-}
-
-.project-img {
-   max-width: 500px;
+   p {
+      color: rgb(56, 58, 56);
+      font-size: 3rem;
+   }
+   &:hover {
+      opacity: 90%;
+   }
 }
 
 /*CONTACT ME SECTION (FOOTER)*/
@@ -296,8 +281,6 @@ h3 {
 
 #contact-container {
    width: 1200px;
-   display: -webkit-box;
-   display: -ms-flexbox;
    display: flex;
    flex-direction: row;
    justify-content: space-around;
@@ -327,7 +310,7 @@ h3 {
       margin: 0 10px;
    }
    #projects-grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: 1fr 1fr;
    }
    #about-block {
       display: none;
@@ -343,7 +326,7 @@ h3 {
    }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 650px) {
    html {
       font-size: 14px;
    }
@@ -357,7 +340,8 @@ h3 {
       margin: 0 5px;
    }
    #projects-grid {
-      grid-template-columns: minmax(0, 1fr);
+      grid-template-columns: 1fr;
+      padding: 3rem;
    }
    #profile-img {
       display: none;
