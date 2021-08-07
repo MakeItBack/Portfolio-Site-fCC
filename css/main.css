@@ -353,21 +353,71 @@ header .nav-link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tile-overlay .h3-black {
+  margin: 2rem 2rem 0 2rem;
 }
 
 .tile-overlay p {
-  color: #383a38;
-  font-size: 3rem;
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 0 1.5rem;
+  text-align: center;
+}
+
+.tile-overlay .project-tech {
+  color: #3e62ab;
+}
+
+.tile-overlay i {
+  font-size: 1.5rem;
+  margin: 0.5rem 1rem 1rem 1rem;
 }
 
 .tile-overlay:hover {
-  opacity: 90%;
+  -webkit-animation: overlay-appear 8s linear;
+          animation: overlay-appear 8s linear;
+}
+
+@-webkit-keyframes overlay-appear {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 90%;
+  }
+  80% {
+    opacity: 90%;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes overlay-appear {
+  0% {
+    opacity: 0;
+  }
+  5% {
+    opacity: 90%;
+  }
+  80% {
+    opacity: 90%;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 
 /*CONTACT ME SECTION (FOOTER)*/
