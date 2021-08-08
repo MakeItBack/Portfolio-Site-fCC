@@ -386,8 +386,8 @@ header .nav-link:hover {
 }
 
 .tile-overlay:hover {
-  -webkit-animation: overlay-appear 8s linear;
-          animation: overlay-appear 8s linear;
+  -webkit-animation: overlay-appear 10s linear;
+          animation: overlay-appear 10s linear;
 }
 
 @-webkit-keyframes overlay-appear {
