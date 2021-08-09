@@ -271,12 +271,22 @@ header {
       margin: 0 1.5rem;
       text-align: center;
    }
+   .launch {
+      color: #d46c22;
+      border-radius: 0.5rem;
+      border: 1px solid #d46c22;
+      padding: 0.4rem 2rem;
+      background: none;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+   }
+
    .project-tech {
       color: #3e62ab;
    }
    i {
-      font-size: 1.5rem;
-      margin: 0.5rem 1rem 1rem 1rem;
+      font-size: 2rem;
+      margin: 0.5rem 1rem;
    }
    &:hover {
       animation: overlay-appear 10s linear;
@@ -340,6 +350,12 @@ header {
       i {
          font-size: 1.3rem;
       }
+      .launch {
+         border-radius: 0.3rem;
+         padding: 0.3rem 1.5rem;
+         font-size: 0.8rem;
+         margin-bottom: 0.8rem;
+      }
    }
 }
 
@@ -370,7 +386,7 @@ header {
    }
 }
 
-@media (min-width: 651px) and (max-width: 750px) {
+@media (min-width: 651px) and (max-width: 800px) {
    .tile-overlay {
       p {
          font-size: 1rem;
@@ -381,6 +397,13 @@ header {
       }
       i {
          font-size: 1.3rem;
+         margin: 0.5rem 0.8rem;
+      }
+      .launch {
+         border-radius: 0.3rem;
+         padding: 0.3rem 1.5rem;
+         font-size: 0.8rem;
+         margin-bottom: 0.8rem;
       }
    }
 }
