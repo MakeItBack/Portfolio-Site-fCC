@@ -127,7 +127,7 @@ header .nav-link:hover {
   -webkit-animation-iteration-count: 6;
           animation-iteration-count: 6;
   opacity: 1;
-  border: 1px solid transparent;
+  border: 5px solid transparent;
   border-radius: 50%;
 }
 
@@ -139,7 +139,7 @@ header .nav-link:hover {
   }
   50% {
     opacity: 1;
-    border: 1px solid white;
+    border: 5px solid rgba(255, 255, 255, 0.5);
   }
   100% {
     -webkit-transform: scale(1.2, 1.2);
@@ -156,7 +156,7 @@ header .nav-link:hover {
   }
   50% {
     opacity: 1;
-    border: 1px solid white;
+    border: 5px solid rgba(255, 255, 255, 0.5);
   }
   100% {
     -webkit-transform: scale(1.2, 1.2);

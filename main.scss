@@ -101,7 +101,7 @@ header {
    animation: pulsate 2s ease-out;
    animation-iteration-count: 6;
    opacity: 1;
-   border: 1px solid transparent;
+   border: 5px solid transparent;
    border-radius: 50%;
 }
 
@@ -112,7 +112,7 @@ header {
    }
    50% {
       opacity: 1;
-      border: 1px solid white;
+      border: 5px solid rgba(255, 255, 255, 0.5);
    }
    100% {
       transform: scale(1.2, 1.2);
