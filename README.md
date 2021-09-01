@@ -9,9 +9,13 @@ This site is built with plain css and html and makes use of flexbox, CSS grid an
 
 ![Portfolio screenshot](img/portfolio%20screenshot.jpg)
 
+___
+
 ### Visit Live Site
 
 This branch is [deployed on GitHub Pages](https://makeitback.github.io/Portfolio-Site-fCC/) and incorporates the test script for freeCodeCamp (all tests passing!)
+
+___
 
 ### License
 
