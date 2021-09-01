@@ -12,16 +12,17 @@ This site is built with HTML and Sass and makes use of flexbox, CSS grid and med
 
 ---
 
+### Visit Live Site
+The master branch of this project is [deployed with Netlify][website]
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/3200e807-55ca-45c7-8d02-8ec07f3f66c2/deploy-status)](https://app.netlify.com/sites/wonderful-golick-a58145/deploys)
+
+---
+
 ### License
 
 This project is licensed under the terms of the BSD 3-clause "New" or "Revised" license.<br>
 
----
 
-### Live Site
-
-[Deployed][website] with Netlify
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/3200e807-55ca-45c7-8d02-8ec07f3f66c2/deploy-status)](https://app.netlify.com/sites/wonderful-golick-a58145/deploys)
 
 [website]: https://www.mikeback.me
