@@ -39,8 +39,7 @@ This site is built with HTML and Sass and makes use of flexbox, CSS grid and med
 
 ## License
 
-<a href="https://opensource.org/licenses"><img src="https://img.shields.io/github/license/MakeItBack/
-Portfolio-Site-fCC?color=dodgerblue"></a><br>
+<a href="https://opensource.org/licenses"><img src="https://img.shields.io/github/license/MakeItBack/Portfolio-Site-fCC?color=dodgerblue"></a><br>
 This project is licensed under the terms of the BSD 3-clause "New" or "Revised" license.
 
 ## Live Site
