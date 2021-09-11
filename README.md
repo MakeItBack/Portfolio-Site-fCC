@@ -21,6 +21,7 @@ Originally built as the 5th and final project for the _Responsive Web Design_ co
 
 [
 <img align="left" height="32" width="32" alt="HTML5" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/html5.svg" />
+<img align="left" height="32" width="32" alt="CSS3" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/css3.svg" />
 <img align="left" height="32" width="32" alt="Sass" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/sass.svg" />
 ](https://github.com/MakeItBack/Learning-Tracker)<br>
 
